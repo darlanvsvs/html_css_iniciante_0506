@@ -7,56 +7,63 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="grid-logo"><img src="bikcraft.svg" alt="" class="logo"></div>
-    <nav class="menu">
-        <a href="" class="botao_menu">SOBRE</a>
-        <a href="" class="botao_menu">PRODUTOS</a>
-        <a href="" class="botao_menu">LOJAS</a>
-        <a href="" class="botao_menu">CONTATO</a>
-    </nav>
-    <div class="grid">
-        <div class="descricao">
-            <span class="detalhe"></span>
-            <h1>Bicicletas Feitas a Mão</h1>
-            <p>A Nimbus Stark é a melhor Bikcraft já criada pela nossa equipe. Ela vem equipada com os melhores acessórios da marca</p>
-            <a href="" class="vermais">VER MAIS</a>
-        </div>
-        <div>
-            <img src="bicicleta.jpg" alt="" class="img">
-        </div>
-        <div class="bloco">
-            <p class="vantagens">VANTAGENS BIKCRAFT</p>
-        </div>
-        <div class="dados">
-            <div class="caracteristicas">
-                <div>
-                    <img src="eletrica.svg" alt="">
-                </div>
-                <div>
-                    <h4>Motor Elétrico</h4>
-                    <p>Permite você viajar distâncias inimagináveis com a sua bike.</p>
-                </div>
+    <header>
+        <div class="grid-logo"><img src="bikcraft.svg" alt="" class="logo"></div>
+        <nav aria-label="primaria">
+            <ul class="menu" >
+                <li><a href="" class="botao_menu">SOBRE</a></li>
+                <li><a href="" class="botao_menu">PRODUTOS</a></li>
+                <li><a href="" class="botao_menu">LOJAS</a></li>
+                <li><a href="" class="botao_menu">CONTATO</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main >
+        <article class="grid">
+            <div class="descricao" aria-labelledby="label-descricao">
+                <h1 id="label-descricao">Bicicletas Feitas a Mão</h1>
+                <p>A Nimbus Stark é a melhor Bikcraft já criada pela nossa equipe. Ela vem equipada com os melhores acessórios da marca</p>
+                <a href="" class="vermais">VER MAIS</a>
             </div>
-            <div class="caracteristicas">
-                <div>
-                    <img  src="velocidade.svg" alt="">
-                </div>
-                <div>
-                    <h4>40 km/h</h4>
-                    <p>A mais rápida bicicleta elétrica disponível hoje no mercado.</p>
-                </div>
+            <div>
+                <img src="bicicleta.jpg" alt="" class="img">
             </div>
-            <div class="caracteristicas">
-                <div>
-                    <img src="rastreador.svg" alt="">
-                </div>
-                <div>
-                    <h4>Rastreador</h4>
-                    <p>Rastreador e sistema anti-furto para garantir o seu sossego.</p>
-                </div>
+        </article>
+        <article class="grid" aria-labelledby="label-vantagens">
+            <div class="bloco">
+                <p id="label-vantagens" class="vantagens">VANTAGENS BIKCRAFT</p>
             </div>
-        </div>
-    </div>
+            <ul class="dados" >
+                <li class="caracteristicas">
+                    <div>
+                        <img src="eletrica.svg" alt="">
+                    </div>
+                    <div>
+                        <h4>Motor Elétrico</h4>
+                        <p>Permite você viajar distâncias inimagináveis com a sua bike.</p>
+                    </div>
+                </li>
+                <li class="caracteristicas">
+                    <div>
+                        <img  src="velocidade.svg" alt="">
+                    </div>
+                    <div>
+                        <h4>40 km/h</h4>
+                        <p>A mais rápida bicicleta elétrica disponível hoje no mercado.</p>
+                    </div>
+                </li>
+                <li class="caracteristicas">
+                    <div>
+                        <img src="rastreador.svg" alt="">
+                    </div>
+                    <div>
+                        <h4>Rastreador</h4>
+                        <p>Rastreador e sistema anti-furto para garantir o seu sossego.</p>
+                    </div>
+                </li>
+            </ul>
+        </article>
+    </main>
     <div class="footer"><p>Bikcraft. Alguns Direitos Reservados.</p></div>
 </body>
 </html>
